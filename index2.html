@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body class="container">
+    <div class="row mt-4 align-items-center">
+        <div class="col">  
+            <h1 class="text-start"> Alunos Matriculados</h1>
+
+            <div class="form-check form-switch "> 
+                <input onchange="ativarDarkmode()"  id="dark" type="checkbox" class="form-check-input">
+                <label for="dark" class="form-check-label"> Modo Escuro</label>
+            </div>
+        </div>
+        <div class="col text-end">   
+            <a href="index.html" class="btn btn-outline-primary">
+                Novo Aluno
+            </a>
+        </div>
+    </div>
+    
+    
+    <hr>
+
+    <button class="btn btn-primary"> Entrar </button>
+    <button class="btn btn-success"> Confirmar </button> <br>
+    
+    <div class="bg-dark text-white">
+        
+    </div> <br>
+    <button class="btn btn-outline-info"> Informaçoes adicionais</button>
+    <button class="btn btn-outline-warning"> Abrir chamado</button> 
+    <br>
+    <br>
+
+    
+    <table id="tabela" class="table table-hover table-striped" > 
+        <thead class="table-success"> <!-- cabeçalho-->
+              
+            <tr> <!--linha da tabela-->
+            <th> Nome </th> <!--coluna da primeira linha-->
+                <th> Email </th>
+                <th> Telefone</th>
+                <th> Cidade </th>
+                <th> Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-body">
+            <tr> 
+                <td> Thalita Feitosa </td>
+                <td> thalita.inacio07@gmail.com </td>
+                <td> (78) 9 9957-4252 </td>
+                <td> Dubai</td>
+                <td> 
+                    <button class="btn btn-success" > Editar </button> 
+                    <button class="btn btn-warning" > excluir </button>
+                </td>    
+            </tr>
+
+            <tr> 
+                <td> Anne Shirley </td>
+                <td> anneshirley@gmail.com </td>
+                <td> (78) 9 9957-4252 </td>
+                <td> Avolea</td>
+                <td> 
+                    <button class="btn btn-success"> Editar </button> 
+                    <button class="btn btn-warning"> excluir </button>
+                </td>    
+            </tr>
+
+            <tr> 
+                <td> Suzanne Feitosa </td>
+                <td> suganneee@gmail.com </td>
+                <td> (78) 9 9957-4252 </td>
+                <td> Dubai</td>
+                <td> 
+                    <button class="btn btn-success"> Editar </button> 
+                    <button class="btn btn-warning"> excluir </button>
+                </td>    
+            </tr>
+
+            <tr> 
+                <td> Thalita Feitosa </td>
+                <td> thalita.inacio07@gmail.com </td>
+                <td> (78) 9 9957-4252 </td>
+                <td> Dubai</td>
+                <td> 
+                    <button class="btn btn-success"> Editar </button> 
+                    <button class="btn btn-warning"> excluir </button>
+                </td>    
+            </tr>
+                
+        </tbody>
+    </table>
+
+    <script src="darkmode.js"> </script>
+</body>
+      
+</html>
